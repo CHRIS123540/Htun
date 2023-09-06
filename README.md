@@ -9,7 +9,7 @@ vpn
 
 `gcc prox.c -o prox`
 
-`./prox -i tun0 -c 192.168.0.213 -d`
+`./prox -i tun0 -s -d`
 
 ## 再开一个shell
 
@@ -17,7 +17,6 @@ vpn
 
 `sudo ip link set tun0 up`
 
-`./prox -i tun0 -s -d`
 
 ## 再开一个shell
 `iperf -s`
