@@ -21,7 +21,7 @@ vpn
 `iperf -s`
 
 # 客户端
-`cd /home/hlx
+`cd /home/hlx`
 
 `gcc prox.c -o prox`
 
