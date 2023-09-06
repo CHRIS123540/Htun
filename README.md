@@ -2,15 +2,17 @@
 vpn
 
 # 服务器端
-
-
+'cd /home/hlx'
+'gcc'
 
 # 客户端
-
+'cd /home/hlx
+gcc
+'
 
 # 参考资料
 
-[https://github.com/gregnietsky/simpletun]
+https://github.com/gregnietsky/simpletun
 
 https://paper.seebug.org/1648/
 
