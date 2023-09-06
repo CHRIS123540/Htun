@@ -4,23 +4,35 @@ vpn
 # 服务器端
 
 `cd /home/hlx`
+
 `gcc prox.c -o prox`
 
+`./prox -i tun0 -c 192.168.0.213 -d`
 
 再开一个shell
 `sudo ip addr add 10.0.0.1/24 dev tun0`
 
 `sudo ip link set tun0 up`
 
+`./prox -i tun0 -s -d`
+再开一个shell
+`iperf -s`
+
 # 客户端
 `cd /home/hlx
-gcc
-`
+
+`gcc prox.c -o prox`
+
+`./prox -i tun0 -c 192.168.0.213 -d`
+
 
 再开一个shell
-sudo ip addr add 10.0.0.2/24 dev tun0
-sudo ip link set tun0 up
+`sudo ip addr add 10.0.0.2/24 dev tun0`
 
+`sudo ip link set tun0 up`
+
+再开一个shell
+`iperf -c 10.0.0.1 -t 10 -i 1`
 # 参考资料
 
 https://github.com/gregnietsky/simpletun
