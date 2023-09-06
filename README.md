@@ -2,13 +2,22 @@
 vpn
 
 # 服务器端
-'cd /home/hlx'
-'gcc'
+`cd /home/hlx`
+`gcc prox.c -o prox`
+
+
+再开一个shell
+sudo ip addr add 10.0.0.1/24 dev tun0
+sudo ip link set tun0 up
 
 # 客户端
-'cd /home/hlx
+`cd /home/hlx
 gcc
-'
+`
+
+再开一个shell
+sudo ip addr add 10.0.0.2/24 dev tun0
+sudo ip link set tun0 up
 
 # 参考资料
 
