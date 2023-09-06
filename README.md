@@ -1,6 +1,8 @@
 # Htun
 vpn
 
+一号机为client 二号机为server
+
 # 服务器端
 
 `cd /home/hlx`
