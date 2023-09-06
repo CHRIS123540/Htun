@@ -2,6 +2,7 @@
 vpn
 
 # 服务器端
+
 `cd /home/hlx`
 `gcc prox.c -o prox`
 
