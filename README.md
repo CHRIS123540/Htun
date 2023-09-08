@@ -9,7 +9,7 @@ prox.c为sampletun的简单修改版，新上传的两个文件为修改版本�
 # 服务器端
 
 
-`gcc test.c -o test -lpthread`
+`gcc server.c -o test -lpthread`
 
 `./test  &`
 
@@ -23,7 +23,7 @@ prox.c为sampletun的简单修改版，新上传的两个文件为修改版本�
 
 # 客户端
 
-`gcc test.c -o test -lpthread`
+`gcc client.c -o test -lpthread`
 
 `./test  &`
 
