@@ -1,5 +1,6 @@
 # Htun
 vpn
+该项目是利用tun虚拟网卡实现的一个数据包截获
 
 一号机为client 二号机为server
 
