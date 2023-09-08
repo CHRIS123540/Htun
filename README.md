@@ -8,35 +8,32 @@ prox.c为sampletun的简单修改版，新上传的两个文件为修改版本�
 
 # 服务器端
 
-`cd /home/hlx`
 
-`gcc prox.c -o prox`
+`gcc test.c -o test -lpthread`
 
-`./prox -i tun0 -s -d`
-
-## 再开一个shell
+`./test  &`
 
 `sudo ip addr add 10.0.0.1/24 dev tun0`
 
 `sudo ip link set tun0 up`
 
-`iperf -s`
+## 再开一个shell
+
+`ping 10.0.0.2`
 
 # 客户端
-`cd /home/hlx`
 
-`gcc prox.c -o prox`
+`gcc test.c -o test -lpthread`
 
-`./prox -i tun0 -c 192.168.0.213 -d`
-
-
-## 再开一个shell
+`./test  &`
 
 `sudo ip addr add 10.0.0.2/24 dev tun0`
 
 `sudo ip link set tun0 up`
 
-`iperf -c 10.0.0.1 -t 10 -i 1`
+## 再开一个shell
+
+`ping 10.0.0.1`
 # 参考资料
 
 https://github.com/gregnietsky/simpletun
