@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFFER_SIZE	BASE.c	15;"	d	file:
+BUFFER_SIZE	main.c	15;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall$/;"	m
+DELAY_MARK	BASE.c	16;"	d	file:
+DELAY_MARK	main.c	16;"	d	file:
+OBJS	Makefile	/^OBJS = $(SRCS:.c=.o)$/;"	m
+SEQ_OFFSET	BASE.c	17;"	d	file:
+SEQ_OFFSET	main.c	17;"	d	file:
+SERVER_IP	BASE.c	13;"	d	file:
+SERVER_IP	main.c	13;"	d	file:
+SERVER_PORT	BASE.c	14;"	d	file:
+SERVER_PORT	main.c	14;"	d	file:
+SRCS	Makefile	/^SRCS = main.c udp_utils.c$/;"	m
+TARGET	Makefile	/^TARGET = hopa$/;"	m
+TUN_NAME	BASE.c	22;"	d	file:
+TUN_NAME	main.c	22;"	d	file:
+UDP_UTILS_H	udp_utils.h	2;"	d
+bind_to_local_addr	udp_utils.c	/^void bind_to_local_addr(int socket, const char* local_ip) {$/;"	f
+client_socket	BASE.c	/^    int client_socket;$/;"	m	struct:thread_args	file:
+client_socket	main.c	/^    int client_socket;$/;"	m	struct:thread_args	file:
+create_udp_socket	udp_utils.c	/^int create_udp_socket() {$/;"	f
+initialize_server_addr	udp_utils.c	/^void initialize_server_addr(struct sockaddr_in* server_addr, const char* ip, int port) {$/;"	f
+main	BASE.c	/^int main() {$/;"	f
+main	main.c	/^int main() {$/;"	f
+receive_and_handle_data	BASE.c	/^int receive_and_handle_data(int client_socket, struct sockaddr_in server_addr, int tun_fd) {$/;"	f
+receive_and_handle_data	main.c	/^int receive_and_handle_data(int client_socket, struct sockaddr_in server_addr, int tun_fd) {$/;"	f
+receive_and_handle_thread	BASE.c	/^void *receive_and_handle_thread(void *arg) {$/;"	f
+receive_and_handle_thread	main.c	/^void *receive_and_handle_thread(void *arg) {$/;"	f
+recv_thread	main.c	/^    pthread_t recv_thread;$/;"	m	struct:thread_ids	file:
+send_probe_packet	BASE.c	/^void send_probe_packet(int client_socket, struct sockaddr_in server_addr) {$/;"	f
+send_probe_packet	main.c	/^void send_probe_packet(int client_socket, struct sockaddr_in server_addr) {$/;"	f
+send_probe_thread	BASE.c	/^void *send_probe_thread(void *arg) {$/;"	f
+send_probe_thread	main.c	/^void *send_probe_thread(void *arg) {$/;"	f
+send_thread	main.c	/^    pthread_t send_thread;$/;"	m	struct:thread_ids	file:
+server_addr	BASE.c	/^    struct sockaddr_in server_addr;$/;"	m	struct:thread_args	typeref:struct:thread_args::sockaddr_in	file:
+server_addr	main.c	/^    struct sockaddr_in server_addr;$/;"	m	struct:thread_args	typeref:struct:thread_args::sockaddr_in	file:
+start_threads	main.c	/^void start_threads(const char* local_ip, const char* remote_ip, int tun_fd, struct thread_ids* ids) {$/;"	f
+thread_args	BASE.c	/^struct thread_args {$/;"	s	file:
+thread_args	main.c	/^struct thread_args {$/;"	s	file:
+thread_ids	main.c	/^struct thread_ids {$/;"	s	file:
+tun_create	BASE.c	/^int tun_create(char *dev, int flags) {$/;"	f
+tun_create	main.c	/^int tun_create(char *dev, int flags) {$/;"	f
+tun_fd	BASE.c	/^    int tun_fd;$/;"	m	struct:thread_args	file:
+tun_fd	main.c	/^    int tun_fd;$/;"	m	struct:thread_args	file:

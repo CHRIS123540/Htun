@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFFER_SIZE	BASE.c	9;"	d	file:
+BUFFER_SIZE	NOW.c	9;"	d	file:
+BUFFER_SIZE	main.c	11;"	d	file:
+DELAY_MARK	BASE.c	10;"	d	file:
+DELAY_MARK	NOW.c	10;"	d	file:
+DELAY_MARK	main.c	12;"	d	file:
+REPORT_INTERVAL	BASE.c	12;"	d	file:
+REPORT_INTERVAL	NOW.c	12;"	d	file:
+REPORT_INTERVAL	main.c	14;"	d	file:
+SEQ_OFFSET	BASE.c	11;"	d	file:
+SEQ_OFFSET	NOW.c	11;"	d	file:
+SEQ_OFFSET	main.c	13;"	d	file:
+SERVER_PORT	BASE.c	8;"	d	file:
+SERVER_PORT	NOW.c	8;"	d	file:
+SERVER_PORT	main.c	10;"	d	file:
+SPECIFIC_IP	BASE.c	13;"	d	file:
+SPECIFIC_IP	NOW.c	13;"	d	file:
+SPECIFIC_IP	main.c	15;"	d	file:
+TUN_NAME	NOW.c	21;"	d	file:
+TUN_NAME	main.c	23;"	d	file:
+main	BASE.c	/^int main() {$/;"	f
+main	NOW.c	/^int main() {$/;"	f
+main	main.c	/^int main() {$/;"	f
+tun_create	NOW.c	/^int tun_create(char *dev, int flags) {$/;"	f
+tun_create	main.c	/^int tun_create(char *dev, int flags) {$/;"	f
+udp_to_tun_thread	main.c	/^void* udp_to_tun_thread(void* arg) {$/;"	f
